@@ -1,0 +1,52 @@
+
+
+body{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: anima 2s ease forwards;
+
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 1100;
+    animation: anima 2s ease forwards 0.3s;
+
+
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 940;
+    stroke-dashoffset: 940;
+    animation: anima 2s ease forwards 0.6s;
+
+}
+
+@keyframes anima{
+    to{
+        stroke-dashoffset: 0;
+        
+    }
+}
+@keyframes cor{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill:#2F4682;
+    }
+}
+
+#logo{
+    animation: cor 1s ease forwards 2s;
+}
+
+
